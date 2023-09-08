@@ -69,7 +69,7 @@ module "vpc" {
 
 module "vpc_endpoints" {
   source             = "terraform-aws-modules/vpc/aws//modules/vpc-endpoints"
-  version            = "3.19.0"
+  version            = "4.0.2"
   vpc_id             = module.vpc.vpc_id
   security_group_ids = [module.vpc.default_security_group_id]
   endpoints = {
